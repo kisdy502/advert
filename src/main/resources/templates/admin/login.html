@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="shortcut icon" th:href="@{/admin/images/favicon.png}"/>
+
+    <title>登录博客后台</title>
+
+    <script th:src="@{//cdn.bootcss.com/jquery/2.2.3/jquery.min.js}"></script>
+    <script th:src="@{/admin/js/base.js}"></script>
+    <script type="text/javascript">
+        var tale = new $.tale();
+
+        function checkForm() {
+            tale.post({
+                url: '/admin/login',
+                data: $("#loginForm").serialize(),
+                success: function (result) {
+                    if (result && result.success) {
+                        window.location.href = '/admin/index';
+                    } else {
+                        tale.alertError(result.msg || '登录失败');
+                    }
+                }
+            });
+            return false;
+        }
+    </script>
+</head>
+<body>
+<h1>登录博客后台</h1>
+<div>
+    <form id="loginForm">
+        <div>
+            <input type="text" placeholder="用户名" name="username"/>
+            <span><i></i></span>
+        </div>
+        <br>
+        <div>
+            <input placeholder="密码" name="password" type="password"/>
+            <span><i></i></span>
+        </div>
+        <br>
+        <button type="button" onclick="checkForm()"> 登&nbsp;录</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+        .r_top {
+            width: 100%;
+            height: 80px;
+            background-color: lightgray;
+            position: absolute;
+            top: 0px;
+
+        }
+
+        .left_menu {
+            height: 100%;
+            width: 220px;
+            background-color: #2f353f;
+            top: 0px;
+            bottom: 0px;
+            position: absolute;
+        }
+
+        .left_top {
+            width: 220px;
+            height: 80px;
+            background-color: gainsboro;
+        }
+        .top_span{
+            height: 80px;
+            line-height:80px;
+            font-size: 22px;
+        }
+        .top_img{
+            vertical-align:middle;
+            width: 50px;
+            height: 50px;
+            margin-left: 12px;
+        }
+
+        .left_list {
+
+        }
+    </style>
+</head>
+<body>
+<div class="r_top">
+    网站首页
+</div>
+<div class="left_menu">
+    <div class="left_top">
+        <img class="top_img" th:src="@{/admin/images/favicon.png}" />
+        <span class="top_span">卓玖御Blog</span>
+    </div>
+    <div class="left_list">
+        <div class="left_item_row">
+            <img class="top_img" th:src="@{/admin/images/favicon.png}" />
+            <span class="top_span">仪表盘</span>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

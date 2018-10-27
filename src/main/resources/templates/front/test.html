@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .content_page {
+            background-color: azure;
+            width: 100%;
+        }
+
+        .t1 {
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            background: -webkit-linear-gradient(red, blue); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(red, blue); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(red, blue); /* Firefox 3.6 - 15 */
+            background: linear-gradient(red, blue); /* 标准的语法 */
+        }
+
+        .t2 {
+            width: 100px;
+            height: 180px;
+            margin-top: 10px;
+            background: -webkit-linear-gradient(left, red, blue); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, red, blue); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, red, blue); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, red, blue); /* 标准的语法 */
+        }
+
+        .t3 {
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            background: -webkit-linear-gradient(45deg, red, green); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(45deg, red, green); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(45deg, red, green); /* Firefox 3.6 - 15 */
+            background: linear-gradient(45deg, red, green); /* 标准的语法 */
+        }
+
+        .t4 {
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            background: -webkit-linear-gradient(72deg, red, green); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(72deg, red, green); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(72deg, red, green); /* Firefox 3.6 - 15 */
+            background: linear-gradient(72deg, red, green); /* 标准的语法 */
+        }
+
+        .t5 {
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            background: -webkit-linear-gradient(225deg, red, green); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(225deg, red, green); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(225deg, red, green); /* Firefox 3.6 - 15 */
+            background: linear-gradient(225deg, red, green); /* 标准的语法 */
+        }
+
+        .t6 {
+            width: 720px;
+            height: 100px;
+            margin-top: 10px;
+            /* Safari 5.1 - 6.0 */
+            background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+            /* Opera 11.1 - 12.0 */
+            background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+            /* Firefox 3.6 - 15 */
+            background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+            /* 标准的语法 */
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        .t7 {
+            width: 720px;
+            height: 100px;
+            margin-top: 10px;
+            background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 1)); /* Safari 5.1 - 6 */
+            background: -o-linear-gradient(right, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 1)); /* Opera 11.1 - 12*/
+            background: -moz-linear-gradient(right, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 1)); /* Firefox 3.6 - 15*/
+            background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 1)); /* 标准的语法 */
+        }
+
+        .t8 {
+            width: 360px;
+            height: 100px;
+            margin-top: 10px;
+            /* Safari 5.1 - 6.0 */
+            background: -webkit-repeating-linear-gradient(red, yellow 10%, green 20%);
+            /* Opera 11.1 - 12.0 */
+            background: -o-repeating-linear-gradient(red, yellow 10%, green 20%);
+            /* Firefox 3.6 - 15 */
+            background: -moz-repeating-linear-gradient(red, yellow 10%, green 20%);
+            /* 标准的语法 */
+            background: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+
+        .t9 {
+            width: 360px;
+            height: 100px;
+            margin-top: 10px;
+            background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1 - 6.0 */
+            background: -o-radial-gradient(red, green, blue); /* Opera 11.6 - 12.0 */
+            background: -moz-radial-gradient(red, green, blue); /* Firefox 3.6 - 15 */
+            background: radial-gradient(red, green, blue); /* 标准的语法 */
+        }
+
+        .t10 {
+            width: 360px;
+            height: 100px;
+            margin-top: 10px;
+            background: -webkit-radial-gradient(red 25%, green 15%, blue 60%); /* Safari 5.1 - 6.0 */
+            background: -o-radial-gradient(red 25%, green 15%, blue 60%); /* Opera 11.6 - 12.0 */
+            background: -moz-radial-gradient(red 25%, green 15%, blue 60%); /* Firefox 3.6 - 15 */
+            background: radial-gradient(red 25%, green 15%, blue 60%); /* 标准的语法 */
+        }
+
+        .t11 {
+            width: 360px;
+            height: 100px;
+            margin-top: 10px;
+            /* Safari 5.1 - 6.0 */
+            background: -webkit-radial-gradient(60% 55%, closest-side,blue,green,yellow,black);
+            /* Opera 11.6 - 12.0 */
+            background: -o-radial-gradient(60% 55%, closest-side,blue,green,yellow,black);
+            /* Firefox 3.6 - 15 */
+            background: -moz-radial-gradient(60% 55%, closest-side,blue,green,yellow,black);
+            /* 标准的语法 */
+            background: radial-gradient(60% 55%, closest-side,blue,green,yellow,black);
+        }
+
+        .t12{
+            width: 360px;
+            height: 100px;
+            margin-top: 10px;
+            /* Safari 5.1 - 6.0 */
+            background: -webkit-radial-gradient(60% 55%, farthest-side,blue,green,yellow,black);
+            /* Opera 11.6 - 12.0 */
+            background: -o-radial-gradient(60% 55%, farthest-side,blue,green,yellow,black);
+            /* Firefox 3.6 - 15 */
+            background: -moz-radial-gradient(60% 55%, farthest-side,blue,green,yellow,black);
+            /* 标准的语法 */
+            background: radial-gradient(60% 55%, farthest-side,blue,green,yellow,black);
+        }
+
+        .t13{
+            width: 360px;
+            height: 100px;
+            margin-top: 10px;
+
+            /* Safari 5.1 - 6.0 */
+            background: -webkit-repeating-radial-gradient(red, yellow 10%, green 15%);
+            /* Opera 11.6 - 12.0 */
+            background: -o-repeating-radial-gradient(red, yellow 10%, green 15%);
+            /* Firefox 3.6 - 15 */
+            background: -moz-repeating-radial-gradient(red, yellow 10%, green 15%);
+            /* 标准的语法 */
+            background: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+
+    </style>
+</head>
+<body>
+<div class="content_page">
+    <div class="t1"></div>
+    <div class="t2"></div>
+    <div class="t3"></div>
+    <div class="t4"></div>
+    <div class="t5"></div>
+    <div class="t6"></div>
+    <div class="t7"></div>
+    <div class="t8"></div>
+    <div class="t9"></div>
+    <div class="t10"></div>
+    <div class="t11"></div>
+    <div class="t12"></div>
+    <div class="t13"></div>
+
+</div>
+</body>
+</html>
